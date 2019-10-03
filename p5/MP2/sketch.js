@@ -36,11 +36,11 @@ function draw() {
 
     // leaves falling?
 
-    timer = timer - 1;
-    if (timer <= 0) {
-      timer = 50;
-      myState++;
-    }
+    // timer = timer - 1;
+    // if (timer <= 0) {
+    //   timer = 50;
+    //   myState++;
+    // }
     break;
 
     case 1:// winter
@@ -191,18 +191,32 @@ function draw() {
     triangle(8, 75, 35, 63, 44, 122);   //bottom left and they go up from there
     triangle(49, 53, 63, 30, 103, 69);
     triangle(63, 17, 64, 0, 116, 11);    //top one
-    // add timer
+
+    // timer = timer - 1;
+    // if (timer <= 0) {
+    //   timer = 50;
+    //   myState++;
+    // }
 
     break;
 
     case 4:
-    fill("red");
+    // house
+    fill("blue");
+    rect(0, 0, 600, 200);
+
+    fill("green");
+    rect(0, 201, 600, 200);
+
+    fill("brown");
     rect(150, 120, 300, 143); //house
 
     triangle(150, 120, 450, 120, 305, 0); //roof
 
     fill(150);
     rect(200, 25, 30, 70);  //chim
+    ellipse(220, 18, 10, 10);
+    ellipse(202, 12, 10, 10);
     //add smoke?
 
     fill("orange");
@@ -210,6 +224,12 @@ function draw() {
 
     rect(173, 149, 50, 50); //left window
     rect(375, 149, 50, 50); //right window
+
+    // timer = timer - 1;
+    // if (timer <= 0) {
+    //   timer = 50;
+    //   myState++;
+    // }
     break;
 
   }
