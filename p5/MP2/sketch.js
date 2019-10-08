@@ -3,17 +3,17 @@ var timer = 200;
 var song1;
 let snowflakes = []; // array to hold snowflake objects
 
-// function preload() {
-//   song1 = loadSound('assets/DaydreamBlissSYBS.mp3');
-//   song1.loop();
-//   song1.stop();
-// }
+function preload() {
+  song1 = loadSound('assets/DaydreamBlissSYBS.mp3');
+  song1.loop();
+  song1.stop();
+}
 
 
 function setup() {
   // put setup code here
   createCanvas (windowWidth, windowHeight);
-    // song1.loop();
+    song1.loop();
 }
 
 function draw() {
