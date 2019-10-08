@@ -3,6 +3,14 @@ var timer = 200;
 var song1;
 let snowflakes = []; // array to hold snowflake objects
 
+// 1 hour basic set up and brain storming
+// 2 hours designing the basics for the pages
+//1 hour adding timer and working on house
+//3 hours on flower and stuff
+//4 hours with snowflakes, scale, adding details, moving stuff around and adding text
+//3 hours on details, finding music, and trying to get the music to work
+//2 hours working on final details and adding in extra parts
+
 function preload() {
   song1 = loadSound('assets/DaydreamBlissSYBS.mp3');
   song1.loop();
