@@ -30,7 +30,7 @@ function setup() {
   birds[3] = loadImage("assets/green.png");
   birds[4] = loadImage("assets/orange.png");
   birds[5] = loadImage("assets/purple.png");
-  birds[6] = loadImage("assets/red1.png");
+  birds[6] = loadImage("assets/red.png");
 
   splashscreen = loadImage("assets/Flowersandbees.png");
   gamebackground = loadImage("assets/Plants.jpg");
