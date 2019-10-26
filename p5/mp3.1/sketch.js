@@ -6,6 +6,7 @@ var bee;
 var bird;
 var birds = [];
 var splashscreen;
+var gamebackground;
 var song1;
 var winstate;
 var losestate;
@@ -31,7 +32,8 @@ function setup() {
   birds[5] = loadImage("assets/purple.png");
   birds[6] = loadImage("assets/red1.png");
 
-  splashscreen = loadImage("assets/Plants.jpg");
+  splashscreen = loadImage("assets/Flowersandbees.png");
+  gamebackground = loadImage("assets/Plants.jpg");
   winstate = loadImage("assets/garden.jpg");
   losestate = loadImage("assets/desertlosestate.jpg");
   // spawn the cars
@@ -60,8 +62,9 @@ function draw() {
 
     case 0:
       // play screen
-      image(splashscreen, 400, 400);
-      fill(52, 222, 235);
+      background("white");
+      image(splashscreen, 400, 300);
+      fill(0, 4, 255);
       textFont(myFont, 50);
       text('It is Spring! Help the bee', 80, 400);
       text('pollinate the flowers! Click to Play!', 80, 500);
@@ -181,7 +184,8 @@ function checkForKeys() {
 }
 
 function game() {
-  image(splashscreen, 400, 400);
+  background("white");
+  image(gamebackground, 400, 350);
 
   // ierate through the cars array
   for (var j = 0; j < cars.length; j++) {
